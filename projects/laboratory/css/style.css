@@ -1,0 +1,16 @@
+.canvas_wrapper{
+    height: 100%;
+    overflow: hidden;
+}
+
+
+#pacman{
+    width: 60%;
+    margin-left: 20%;
+}
+
+@media screen and (max-width: 900px){
+    #pacman{
+        height: 0;
+    }
+}

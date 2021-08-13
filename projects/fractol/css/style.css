@@ -1,0 +1,14 @@
+#fractol_tree {
+    background: #000;
+}
+
+#tree_canvas {
+    background: #000;
+}
+
+@media screen and (max-width: 900px){
+    .canvas_wrapper{
+        height: 60vh;
+        overflow: hidden;
+    }
+}

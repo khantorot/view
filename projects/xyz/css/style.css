@@ -1,0 +1,57 @@
+@font-face {
+	font-family: 'Nintendoid1';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/font) format('woff2');
+}
+
+#preloader_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transition: filter ease 2s;
+}
+
+.hide_prelaoder #preloader_container{
+    filter: grayscale(1);
+}
+
+.text_wrapper {
+	position: relative;
+	background: #111;
+	width: 50%;
+	margin-left: 25%;
+	padding: 4vw;
+	color: #eee;
+	text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+	animation-duration: 0.01s;
+	animation-name: textflicker;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+}
+
+.text_wrapper h4 {
+	margin-bottom: 20px;
+	font-size: 4vw;
+	font-family: 'Nintendoid1';
+}
+.text_wrapper p{
+	font-size: 1vw;
+	font-family: 'Nintendoid1';
+}
+/* .contributors_box p:nth-child(2) span{
+	font-family: 'Nintendoid1';
+	font-size: 11px;
+} */
+
+@keyframes textflicker {
+	0% { text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69 }
+	100% { text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69 }
+}

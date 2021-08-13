@@ -1,0 +1,43 @@
+@font-face {
+    src: url(../fonts/CompressaPRO-GX.woff2);
+    font-family: 'Compressa VF';
+    font-style: normal;
+}
+
+#title {
+    font-family: 'Compressa VF'!important;
+    text-rendering: optimizeSpeed;
+    color: #fff;
+    width: 100%;
+    user-select: none;
+    line-height: 0.8em;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+    width: 100vw;
+}
+
+#title span {
+    transform: translateY(-10px);
+    user-select: none;
+    font-family: inherit;
+}
+
+#title.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#title.stroke span {
+    position: relative;
+    color: #211D26;
+    line-height: inherit;
+}
+
+
+@media screen and (max-width: 900px){
+    #title{
+        display: none;
+    }
+}

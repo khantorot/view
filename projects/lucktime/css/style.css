@@ -1,0 +1,9 @@
+.distort_img_wrap{
+    width: 50vw;
+    margin-left: 25%;
+    height: 50vw;
+}
+.distort_img{
+    height: 100%;
+    width: 100%;
+}

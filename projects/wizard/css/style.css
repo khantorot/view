@@ -1,0 +1,26 @@
+.intro{
+    height: 100vh;
+    background: #000;
+}
+.intro video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 100px;
+    color: #fff;
+}
+
+section{
+    height: 100vh;
+    color: #000;
+    font-size: 100px;
+    text-align: center;
+}
