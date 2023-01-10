@@ -1,0 +1,14 @@
+.logo a{
+    display: inline-block;
+}
+
+.logo a img{
+    width: 200px;
+    animation: play 10s infinite;
+}
+
+@keyframes play{
+    0%{ transform: rotate(0) }
+    100%{ transform: rotate(360deg) }
+}
+

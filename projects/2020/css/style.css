@@ -1,0 +1,28 @@
+.canvas_wrapper{
+    height: 100%;
+    overflow: hidden;
+}
+
+.logo a{
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 0px;
+}
+
+.logo a span{
+    display: inline-block;
+    margin: 0 5px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--text);
+    border: 5px solid var(--text);
+}
+
+.logo a:hover span{
+    background: var(--bg);
+}
+
+.logo a span:nth-child(1){
+    transition-delay: 0.2s;
+}

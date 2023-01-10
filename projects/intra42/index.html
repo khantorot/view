@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../../content/icons/shortcut.svg">
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>intra42</title>
+</head>
+
+<body>
+
+    <main data-name="intra42" class="fade_out fade_out_active">
+        <div class="container" data-scroll>
+            <div class="preloader" data-content="content">
+                <canvas id="fractol_tree"></canvas>
+            </div>
+            <header></header>
+            <section class="about"></section>
+            <section class="content">
+                <div class="content_item">
+                    <img src="./content/intra42_1.png" alt="intra42">
+                </div>
+                <div class="content_item">
+                    <img src="./content/intra42_2.png" alt="intra42">
+                </div>
+                <div class="content_item video_item">
+                    <video src="./content/intra42.mp4" loop autoplay muted></video>
+                </div>
+            </section>
+            <section class="animation">
+                <div class="canvas_wrapper">
+                    <canvas id="canvas"></canvas>
+                </div>
+            </section>
+            <section class="logo">
+                <a href="https://khantorot.github.io/intra42/" target="_blank" class="tree_canvas_wrapper">
+                    <canvas id="tree_canvas"></canvas>
+                </a>
+            </section>
+            <footer></footer>
+        </div>
+    </main>
+
+    <script src="../../assets/js/data.js"></script>
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/script.js"></script>
+
+    <script src="./js/three.js"></script>
+    <script src="./js/orbit_controls.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

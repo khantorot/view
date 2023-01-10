@@ -1,0 +1,57 @@
+#canvas_wrapper{
+    cursor: grab;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+#toggle_anim{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(-50%);
+    z-index: 10;
+    opacity: 0;
+}
+.toggle__btn{
+    border: 0;
+    outline: 0;
+    background: var(--form);
+    color: var(--bg);
+    border-radius: 5px;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+}
+
+@media screen and (max-width: 900px){
+    #toggle_anim{
+        display: none;
+    }
+}
+
+
+
+
+.logo_wrapper{
+    display: inline-block;
+    width: 200px;
+    position: relative;
+}
+
+.logo_svg {
+    width: 100%;
+    height: auto;
+}
+
+.logo_svg path{
+    fill: none;
+    stroke: var(--text);
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: ease-out 0.2s;
+}
+.logo_svg:hover path{
+    d: path("M 400 100 L 750 100 L 750 700 L 50 700 L 50 100 L 750 100 L 200 250 L 600 250 L 600 550 L 200 550 L 200 250 L 750 100 L 750 700 L 600 250 L 600 550 L 50 700 L 50 100 L 200 550 ");
+}

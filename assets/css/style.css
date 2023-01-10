@@ -1,0 +1,280 @@
+header{
+    margin: 30px 0px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.back_btn{
+    padding-left: 5px;
+    font-weight: 500;
+}
+
+.back_btn span{
+    display: inline-block;
+    width: 10px;
+    height: 2px;
+    background: var(--text);
+    position: relative;
+    top: -4px;
+    left: -5px;
+    border-radius: var(--radius);
+}
+
+.back_btn span::after,
+.back_btn span::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 7px;
+    height: 2px;
+    background: var(--text);
+    border-radius: var(--radius);
+    transform: rotate(35deg) translateX(-1px);
+    transform-origin: left;
+}
+
+.back_btn span::after{
+    transform: rotate(-35deg) translateX(-1px);
+}
+
+header .back_btn:hover span{
+    animation: arrow ease 0.7s;
+}
+
+@keyframes arrow{
+    0%{ transform: translateX(0px) }
+    25%{ transform: translateX(-5px) }
+    50%{ transform: translateX(2px) }
+    75%{ transform: translateX(-5px) }
+    100%{ transform: translateX(0px) }
+}
+
+header .visit_btn{
+    font-weight: 500;
+    background: var(--form);
+    color: var(--bg);
+    padding: 5px 15px;
+    border-radius: var(--radius);
+    transition: ease 0.2s;
+    text-align: center;
+}
+
+header .visit_btn:hover{
+    background: var(--bg);
+    color: var(--form);
+}
+
+
+
+.next_project{
+    width: 100%;
+    height: 100%;
+}
+
+.next_project h2{
+    text-align: center;
+    transform: translateY(-100%)
+}
+
+.next_project div{
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+header h2,
+footer h2{
+    text-transform: lowercase;
+    font-size: 26px;
+}
+
+footer h2{
+    z-index: 1;
+    position: relative;
+}
+
+header h2 span,
+footer h2 span{
+    color: var(--form);
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.about{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 100px;
+}
+
+.about_box{
+    width: 30%;
+}
+
+.about_box h4{
+    color: var(--form);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.about_box p{
+    font-size: 15px;
+    text-transform: lowercase;
+}
+
+.contributors_box h4{
+    text-align: center;
+}
+
+.contributors_box p{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contributors_box p span{
+    margin-left: auto;
+}
+
+.info_box{
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+.content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+
+.content .content_item::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 30%, rgba(0,0,0,1) 100%);
+}
+
+
+.content .content_item{
+    position: relative;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    overflow: hidden;
+    width: calc(50% - 5px);
+}
+
+.content .video_item{
+    width: 100%;
+}
+
+.content .content_item video,
+.content .content_item img{
+    width: 100%;
+}
+
+
+
+
+.animation{
+    position: relative;
+    margin-top: 100px;
+}
+
+
+
+
+
+.logo{
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px){
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header h2{
+        margin: 20px 0px 30px 0px;
+    }
+    header .visit_btn{
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    header h2,
+    footer h2{
+        font-size: 22px;
+    }
+
+    header h2 span,
+    footer h2 span{
+        font-size: 12px;
+    }
+    footer h2{
+        transform: translateY(-150%);
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about_box{
+        width: 100%;
+        text-align: left;
+    }
+    .about_box h4{
+        font-size: 14px;
+        margin-bottom: 5px;
+        margin-top: 25px;
+    }
+    .about_box p{
+        font-size: 14px;
+    }
+
+    .content .content_item{
+        width: 100%;
+    }
+}

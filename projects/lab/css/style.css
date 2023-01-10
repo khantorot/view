@@ -1,0 +1,29 @@
+.canvas_wrapper{
+    height: 100%;
+    overflow: hidden;
+}
+
+.logo_wrapper{
+    display: block;
+}
+
+.logo{
+    width: 100%;
+    height: calc(60vh - 150px);
+}
+
+#logo{
+    height: calc(40vw - 150px);
+}
+
+
+@media screen and (max-width: 900px){    
+    .logo{
+        overflow: hidden;
+    }
+    #logo{
+        width: 70%;
+        margin: 0 15%;
+        height: auto;
+    }
+}

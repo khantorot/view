@@ -1,0 +1,96 @@
+#preloader_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transition: filter ease 2s;
+}
+
+.hide_prelaoder #preloader_container{
+    filter: grayscale(1);
+}
+
+
+.logo a{
+    display: block;
+}
+
+.logo a .cube{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 200px;
+}
+
+.logo a .cube span{
+    position: relative;
+    display: block;
+    width: 50%;
+    overflow: hidden;
+}
+
+.logo a .cube span p{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: 0.5s;
+}
+
+.logo a .cube span:nth-child(1) p:nth-child(2) {
+    transform: translateY(100%);
+}
+
+.logo a:hover .cube span:nth-child(1) p:nth-child(1) {
+    transform: translateX(100%);
+}
+
+.logo a:hover .cube span:nth-child(1) p:nth-child(2) {
+    transform: translateY(0%);
+}
+
+
+.logo a .cube span:nth-child(2) p:nth-child(2) {
+    transform: translateX(-100%);
+}
+
+.logo a:hover .cube span:nth-child(2) p:nth-child(1) {
+    transform: translateY(100%);
+}
+
+.logo a:hover .cube span:nth-child(2) p:nth-child(2) {
+    transform: translateX(0%);
+}
+
+
+.logo a .cube span:nth-child(3) p:nth-child(2) {
+    transform: translateX(100%);
+}
+
+.logo a:hover .cube span:nth-child(3) p:nth-child(1) {
+    transform: translateY(-100%);
+}
+
+.logo a:hover .cube span:nth-child(3) p:nth-child(2) {
+    transform: translateX(0%);
+}
+
+
+.logo a .cube span:nth-child(4) p:nth-child(2) {
+    transform: translateY(-100%);
+}
+
+.logo a:hover .cube span:nth-child(4) p:nth-child(1) {
+    transform: translateX(-100%);
+}
+
+.logo a:hover .cube span:nth-child(4) p:nth-child(2) {
+    transform: translateY(0%);
+}

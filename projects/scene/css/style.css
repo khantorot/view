@@ -1,0 +1,7 @@
+.logo a{
+    display: inline-block;
+}
+
+.logo a img{
+    width: 200px;
+}

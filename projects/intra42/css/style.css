@@ -1,0 +1,56 @@
+.preloader{
+    overflow: hidden;
+}
+
+.canvas_wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.canvas_wrapper:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 101%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 30%, rgba(0,0,0,1) 100%);
+    pointer-events: none;
+}
+
+
+#fractol_tree {
+    background: #000;
+}
+
+.tree_canvas_wrapper{
+    display: block;
+}
+
+
+.logo{
+    width: 100%;
+    height: calc(75vh - 150px);
+    align-items: flex-end;
+}
+
+#tree_canvas {
+    background: #000;
+    height: calc(75vh - 150px);
+}
+
+
+@media screen and (max-width: 900px){
+    .canvas_wrapper{
+        overflow: hidden;
+    }
+    #canvas{
+        pointer-events: none;
+    }
+    #tree_canvas {    
+        height: auto;
+        width: 60%;
+        margin-left: 20%;
+    }
+}

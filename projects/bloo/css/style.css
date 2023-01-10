@@ -1,0 +1,31 @@
+.webgl_container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+.logo a svg{
+    width: 150px;
+    height: 150px;
+    background: var(--text);
+    border-radius: 50%;
+}
+
+
+.logo a svg path {
+    fill: var(--bgrd);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: ease-out 0.3s;
+}
+
+
+.logo a:hover path {
+    d: path("M 300 450 L 200 450 L 200 250 A 50 50 0 1 1 400 250 L 400 450 L 300 450 ");
+}
+
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../../content/icons/shortcut.svg">
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>room</title>
+</head>
+
+<body>
+
+    <main data-name="room" class="fade_out fade_out_active">
+        <div class="container" data-scroll>
+            <div class="preloader" data-content="content">
+                <div id="canvas_wrapper"></div>
+                <div id="toggle_anim">
+                    <button class="toggle__btn" type="button" data-action="pause" title="pause">z</button>
+                </div>
+            </div>
+            <header></header>
+            <section class="about"></section>
+            <section class="content">
+                <div class="content_item">
+                    <img src="./content/room_1.png" alt="room">
+                </div>
+                <div class="content_item">
+                    <img src="./content/room_2.png" alt="room">
+                </div>
+                <div class="content_item video_item">
+                    <video src="./content/room.mp4" loop autoplay muted></video>
+                </div>
+            </section>
+            <section class="logo">
+                <a href="https://khantorot.github.io/room/" target="_blank" class="logo_wrapper">
+                    <svg viewBox="0 0 800 800" class="logo_svg">
+                        <path
+                            d="M 400 100 L 750 100 L 750 700 L 50 700 L 50 100 L 750 100 L 600 250 L 600 550 L 200 550 L 200 250 L 600 250 L 750 100 L 750 700 L 600 550 L 200 550 L 50 700 L 50 100 L 200 250 " />
+                    </svg>
+                </a>
+            </section>
+            <footer></footer>
+        </div>
+    </main>
+
+    <script src="../../assets/js/data.js"></script>
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/script.js"></script>
+
+
+    <script src="./js/three.js"></script>
+    <script src="./js/orbit_controls.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
